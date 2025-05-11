@@ -2,10 +2,11 @@ Final Project: Dynamic Web Application using Nexr.js and Tailwind CSS
 
 Live demo: https://webtechfinalproj.vercel.app/
 
-Project Description
+Project Description:
+
 This project is a web application created using Next.js, Tailwind CSS and ShadCN UI demonstrating frontend development and API integration. In fetching Data it used React-Query with Interactive features, Real-time map and Dynamic data.
 
-Key Features
+Key Features:
 - Users Directory - Display a list of user with their basic information.
 - User Profile page
 - Interactive address map via mapbox
