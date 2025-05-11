@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Final Project: Dynamic Web Application using Nexr.js and Tailwind CSS
 
-## Getting Started
+Live demo: https://webtechfinalproj.vercel.app/
 
-First, run the development server:
+Project Description
+This project is a web application created using Next.js, Tailwind CSS and ShadCN UI demonstrating frontend development and API integration. In fetching Data it used React-Query with Interactive features, Real-time map and Dynamic data.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Key Features
+- Users Directory - Display a list of user with their basic information.
+- User Profile page
+- Interactive address map via mapbox
+- Display User's posts
+- List all Posts
+- Data Dashboard
+- Live chart for number of users, posts, and comment
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Setup and Installation
+- Install Dependencies
+- Add environment variables
+- Run the development server
+- Visit the website in your browser(localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Team Member Contributions
+1. Seann Wyett Larga - implement all features setup, API integration with React-Query, Mapbox, charts, github repository and vercel deployment
+2. Jerome Arado - Help with the documentaion, set up Next.js environmrent, and Tailwind CSS
+3. Hugh Derit - Help with the documentation, assisted with project setup and testing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deployed Application URL
+Vercel: https://webtechfinalproj.vercel.app/
