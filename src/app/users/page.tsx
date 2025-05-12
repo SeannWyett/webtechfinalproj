@@ -22,20 +22,22 @@ export default function UsersPage() {
   }, []);
 
   return (
-    <div className="container mx-auto p-6">
-      <h1 className="text-3xl font-bold text-center mb-6">Users</h1>
+    <div className="container mx-auto p-6 dark:bg-gray-900">
+      <h1 className="text-3xl font-bold text-center mb-6 dark:text-white">
+        Users
+      </h1>
       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {users.map((user) => (
           <li
             key={user.id}
             onClick={() => setSelectedUserId(user.id)}
-            className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg cursor-pointer"
+            className="bg-white dark:bg-gray-800 dark:text-white p-4 rounded-lg shadow-md hover:shadow-lg cursor-pointer"
           >
             <h2 className="text-xl font-semibold mb-2">{user.name}</h2>
-            <p className="text-gray-700">
+            <p className="text-gray-700 dark:text-gray-300">
               <strong>Username:</strong> {user.username}
             </p>
-            <p className="text-gray-700">
+            <p className="text-gray-700 dark:text-gray-300">
               <strong>Email:</strong> {user.email}
             </p>
           </li>

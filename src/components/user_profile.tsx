@@ -58,7 +58,7 @@ export default function UserProfile({ userId, onClose }: UserProfileProps) {
   if (!user || !coordinates) {
     return (
       <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-        <div className="bg-white p-6 rounded-lg shadow-lg">
+        <div className="bg-white dark:bg-gray-800 dark:text-white p-6 rounded-lg shadow-lg">
           <p>Loading user information...</p>
         </div>
       </div>
@@ -67,11 +67,11 @@ export default function UserProfile({ userId, onClose }: UserProfileProps) {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-screen-md overflow-y-auto max-h-screen relative">
+      <div className="bg-white dark:bg-gray-800 dark:text-white p-6 rounded-lg shadow-lg w-full max-w-screen-md overflow-y-auto max-h-screen relative">
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-gray-500 hover:text-gray-800"
+          className="absolute top-4 right-4 text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200"
         >
           ✖
         </button>
@@ -93,7 +93,7 @@ export default function UserProfile({ userId, onClose }: UserProfileProps) {
             href={`https://${user.website}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:underline"
+            className="text-blue-500 dark:text-blue-400 hover:underline"
           >
             {user.website}
           </a>
@@ -120,7 +120,10 @@ export default function UserProfile({ userId, onClose }: UserProfileProps) {
         <h3 className="text-xl font-bold mb-2">Posts by {user.name}</h3>
         <ul className="space-y-2">
           {posts.map((post) => (
-            <li key={post.id} className="p-4 border rounded-lg shadow-sm">
+            <li
+              key={post.id}
+              className="p-4 border rounded-lg shadow-sm bg-gray-100 dark:bg-gray-700 dark:border-gray-600"
+            >
               <h4 className="font-semibold">{post.title}</h4>
               <p>{post.body}</p>
             </li>
